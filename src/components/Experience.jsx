@@ -8,19 +8,25 @@ import { motion } from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
 
 import { styles } from "../styles";
-import { experiences } from "../constants";
+import { experiences } from "../constants"; // Assuming 'experiences' data is available
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
+// --- Combined Experience Card and Timeline Component ---
+
+// Internal component for rendering each timeline element
 const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
-        background: "#1d1836",
-        color: "#fff",
+        // Modern, slightly transparent dark background with green glow shadow
+        background: "#1d1836e6", 
+        color: "#e0ffe4", 
+        boxShadow: "0 0 10px 0 rgba(0, 255, 65, 0.4)", 
+        borderRadius: "12px",
       }}
-      contentArrowStyle={{ borderRight: "7px solid  #232631" }}
-      date={experience.date}
+      // Change arrow color to terminal green
+      contentArrowStyle={{ borderRight: "7px solid  #00ff41" }} 
       iconStyle={{ background: experience.iconBg }}
       icon={
         <div className='flex justify-center items-center w-full h-full'>
@@ -32,21 +38,25 @@ const ExperienceCard = ({ experience }) => {
         </div>
       }
     >
-      <div>
-        <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
+      <div className='font-mono'>
+        {/* Terminal green text for the title */}
+        <h3 className='text-[#00ff41] text-[26px] font-bold tracking-tight'>
+          {experience.title}
+        </h3>
+        {/* Lighter text for the company name */}
         <p
-          className='text-secondary text-[16px] font-semibold'
+          className='text-[#e0ffe4] text-[18px] font-semibold tracking-wide'
           style={{ margin: 0 }}
         >
           {experience.company_name}
         </p>
       </div>
 
-      <ul className='mt-5 list-disc ml-5 space-y-2'>
+      <ul className='mt-5 list-disc ml-5 space-y-3 font-mono'>
         {experience.points.map((point, index) => (
           <li
             key={`experience-point-${index}`}
-            className='text-white-100 text-[14px] pl-1 tracking-wider'
+            className='text-[#00ff41]/90 text-[15px] pl-1 tracking-wider'
           >
             {point}
           </li>
@@ -56,20 +66,21 @@ const ExperienceCard = ({ experience }) => {
   );
 };
 
-const Experience = () => {
+// Main combined component
+const WorkExperience = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} text-center`}>
+        <p className={`${styles.sectionSubText} text-center font-mono text-[#00ff41]/80`}>
           What I have done so far
         </p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>
+        <h2 className={`text-center font-mono ${styles.sectionHeadText} text-[#00ff41] drop-shadow-[0_0_5px_rgba(0,255,65,0.8)]`}>
           Work Experience.
         </h2>
       </motion.div>
 
       <div className='mt-20 flex flex-col'>
-        <VerticalTimeline>
+        <VerticalTimeline lineColor="#00ff41"> 
           {experiences.map((experience, index) => (
             <ExperienceCard
               key={`experience-${index}`}
@@ -82,4 +93,4 @@ const Experience = () => {
   );
 };
 
-export default SectionWrapper(Experience, "work");
+export default SectionWrapper(WorkExperience, "work");

@@ -38,6 +38,11 @@ import bdev from "./bdev.jpg";
 import shop from "./shop.jpg";
 import gpt from "./gpt.jpg";
 
+import linkedin from './linkedin_icon.svg'; // Your LinkedIn icon file
+import x_icon from './x_icon.svg';         // Your X icon file
+import facebook from './facebook_icon.svg'; // Your Facebook icon file
+import whatsapp from './whatsapp_icon.svg'; // Your WhatsApp icon file
+
 export {
   logo,
   backend,
@@ -73,4 +78,8 @@ export {
   bdev,
   shop,
   gpt,
+  linkedin,
+  x_icon,
+  facebook,
+  whatsapp,
 };

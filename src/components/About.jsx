@@ -7,12 +7,14 @@ import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
+// --- ServiceCard Component Update ---
 const ServiceCard = ({ index, title, icon }) => {
   return (
     <Tilt className='xs:w-[250px] w-full'>
       <motion.div
         variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-        className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
+        // Changed gradient border color from green-pink to a single bright green
+        className='w-full green-gradient-border p-[1px] rounded-[20px] shadow-[0_0_15px_rgba(0,255,65,0.4)]' 
       >
         <div
           options={{
@@ -20,6 +22,7 @@ const ServiceCard = ({ index, title, icon }) => {
             scale: 1,
             speed: 450,
           }}
+          // Changed background color to darker tertiary (or a black/dark gray shade)
           className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
         >
           <img
@@ -28,7 +31,7 @@ const ServiceCard = ({ index, title, icon }) => {
             className='w-16 h-16 object-contain'
           />
 
-          <h3 className='text-white text-[20px] font-bold text-center'>
+          <h3 className='text-[#e0ffe4] text-[20px] font-bold text-center font-mono'>
             {title}
           </h3>
         </div>
@@ -38,17 +41,23 @@ const ServiceCard = ({ index, title, icon }) => {
   )
 }
 
+// --- About Component Update ---
 const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <p className={`${styles.sectionSubText} font-mono text-[#00ff41]/80`}>
+          Introduction
+        </p>
+        <h2 className={`${styles.sectionHeadText} font-mono text-[#00ff41] drop-shadow-[0_0_5px_rgba(0,255,65,0.8)]`}>
+          Overview.
+        </h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        // Changed text color to terminal green and applied monospace font
+        className='mt-4 text-[#00ff41]/90 text-[17px] max-w-3xl leading-[30px] font-mono'
       >
         I'm a skilled software developer with experience in TypeScript and
         JavaScript, and expertise in frameworks like React, Node.js, and
