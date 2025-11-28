@@ -24,17 +24,17 @@ const Footer = () => {
         },
         {
             name: "X (Twitter)",
-            url: "https://x.com/serahshani", 
+            url: "https://x.com/shedev22", 
             icon: x_icon, 
         },
         {
             name: "Facebook",
-            url: "https://www.facebook.com/serahshani", 
+            url: "https://www.facebook.com/profile.php?id=100095056839085#", 
             icon: facebook, 
         },
         {
             name: "WhatsApp",
-            url: "https://wa.me/+254700000000", // ⭐ REPLACE with your international phone number
+            url: "https://wa.me/+254758056305", // ⭐ REPLACE with your international phone number
             icon: whatsapp, 
         },
     ];

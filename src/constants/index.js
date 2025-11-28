@@ -130,7 +130,7 @@ const experiences = [
   {
     title: "Lead Full Stack Engineer and Managing Director",
     company_name: "Git Software Solutions",
-    icon: starbucks, // Placeholder icon
+    icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSdDPUYppGGKBQrfStD41LWPqIafpRlvGmlw&s", // Placeholder icon
     iconBg: "#383E56",
     date: "May 2023 - Present (2 yrs 7 mos)",
     points: [
@@ -154,7 +154,7 @@ const experiences = [
   {
     title: "Frontend Developer",
     company_name: "Swahilipot Hub Foundation",
-    icon: shopify, // Placeholder icon
+    icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP_zVNihjLgBZZlUpYhcb1UVlWszfTldu6Cw&s", // Placeholder icon
     iconBg: "#3498DB",
     date: "Jun 2022 - Dec 2022 (7 mos)",
     points: [
@@ -171,54 +171,54 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-    "Thank you for building and nurturing a vibrant developer community on your campus. Thank you for reaching out to hundreds of students to create awareness about your club, and helping them become better developers.",
-    name: "GDSC India",
-    designation: "Community Manager",
-    company: "Google DSC",
-    image: "https://Shani-2002.web.app/assets/gdsc-f71af2fd.png",
+    "I recently worked with Serah on an embedded UI project, and she exceeded expectations. I provided a rough sketch, and she quickly transformed it into a clean, structured Figma design ready for development, demonstrating excellent attention to detail, strong understanding of UI/UX principles tailored for embedded interfaces, and a fast turnaround time. Her communication was clear, she incorporated feedback effectively, and even suggested improvements that enhanced the final design. Serah is professional, reliable, and highly skilled. I highly recommend her.",
+    name: "Felix",
+    designation: "Embedded Systems Engineer",
+    company: "Chronos",
+    image: "https://play-lh.googleusercontent.com/S7PNiRZFHA1dCFLiKfcc6vpAftizsik_KGgQgme7F1SHE18ch7RCgnYleoMNLz6pvQ",
   },
   {
     testimonial:
-      "Your hard work, commitment, and collaboration have played a pivotal role in the success of the project. The website we've created together stands as a testament to your valuable contributions, and your efforts have motivated us to push for even greater achievements in the future. Thank you for being such an integral part of this journey.",
-    name: "Mayur N. (Former GDSE Member):",
-    designation: "Project Manager",
-    company: "SIEMENS",
-    image: "https://www.secunet.com/fileadmin/user_upload/01_Seitencontent/Produkt-_und_Serviceseiten/Industry/1Siemens_Logo.jpg",
+      "I am really great full to Miss Serah Shani for helping me redesigning and participating in building our institutions website. I highly acknowledge her efforts and ability to debug and her test for best designs that are modern and attractive.",
+    name: "Jeff",
+    designation: "Instructor",
+    company: "Uhandisi Training Institute",
+    image: "https://www.uhandisiinstitute.com/logo.png",
   },
   {
     testimonial:
-      "Your exceptional skills, dedication, and teamwork have made a significant impact on the success of this project. Your contributions have not only resulted in a remarkable website but have also inspired us to strive for excellence in all our future endeavors.",
-    name: "Siddhesh Nikam",
-    designation: "Engineer",
-    company: "LTIMindTree",
-    image: "https://scontent.cdninstagram.com/v/t51.2885-19/361108662_826612798684832_1347121411853358939_n.jpg?stp=dst-jpg_s100x100&_nc_cat=105&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=fJxi8hHYIyEAX8P2c05&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.cdninstagram.com&oh=00_AfD8IbRlM3WJvm38AhkR5NBbVCmAfSd8cHPJ05HK2b2Mcg&oe=64F49C2B",
+      "Sera is an awesome team player. She knows how to mix her professional skills to become a valuable team player. I enjoyed working with her on a couple of projects, she understands the end goal and will keep improving on the existing solutions to make them better and effective ",
+    name: "Chris",
+    designation: "Community Data Lead",
+    company: "Swahilipot Hub Foundation",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP_zVNihjLgBZZlUpYhcb1UVlWszfTldu6Cw&s",
   },
 ];
 
 const projects = [
   {
-    name: "Shopping App",
+    name: "Tours and Travels Website",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web-based platform that allows users to search and book Their Holiday Tours, providing a convenient and efficient solution for travel needs.",
     tags: [
       {
-        name: "react",
+        name: "NextJS",
         color: "blue-text-gradient",
       },
       {
-        name: "Strapi",
+        name: "NodeJS",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "TailwindCSS",
         color: "pink-text-gradient",
       },
     ],
     image: shop,
-    source_code_link: "https://github.com/Shani-PANDE/ShoppingApp",
+    source_code_link: "https://smallfootsafari.co.ke",
   },
   {
-    name: "ChatGPT Clone",
+    name: "Embeded UI Design for IoT Device",
     description:
       "ChatGPT Clone is an AI language model based on the GPT-3.5 architecture developed by OpenAI. It is designed to generate human-like responses to text-based prompts and engage in conversation with users. The model has been trained on a vast amount of text data and can provide information, answer questions, and assist with various tasks.",
     tags: [
@@ -227,7 +227,7 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "flask",
+        name: "figma",
         color: "green-text-gradient",
       },
       {
